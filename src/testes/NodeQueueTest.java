@@ -12,7 +12,6 @@ import source.Queue;
 
 public class NodeQueueTest {
 
-	Object o;
 	static final Queue<Integer> a = new FilaNode<Integer>();
 
 	@Test

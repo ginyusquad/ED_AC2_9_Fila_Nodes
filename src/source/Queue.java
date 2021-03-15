@@ -18,4 +18,6 @@ public interface Queue<E> {
 	 * @return elemento removido.
 	 * @exception EmptyQueueException se a fila estiver vazia. */
 	public E dequeue() throws EmptyQueueException;
-	}
+	
+	public void clear();
+}

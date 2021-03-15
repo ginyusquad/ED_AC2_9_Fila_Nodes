@@ -97,4 +97,17 @@ public class FilaNode<E> implements Queue<E>{
 		return vetor+"]";
 	}
 
+
+	@Override
+	public void clear() {
+		this.head = new Node<E>();
+		this.tail = new Node<E>();
+		// Encadeando a estrutura
+		head.setNext(tail);
+		head.setPrev(tail);
+		tail.setNext(head);
+		tail.setPrev(head);
+		tamanho = 0;
+	}
+
 }
